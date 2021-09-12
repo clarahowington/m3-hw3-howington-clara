@@ -16,10 +16,18 @@ body,html{
 
    p {
     padding: 10px 0 10px 0;
+    color: #050500;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
 }
 
 h2 {
-    text-transform: uppercase;
+    color: #050500;
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 500;
 }
    
 ul{
@@ -33,27 +41,41 @@ ul{
    
 li {
     display: inline-block;
-   
+    padding: 10px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    color: #050500;
 }
 nav {
     background-color: #f8df1f;
-    padding: 2%;
+    padding: 2% 13% 2% 13%
+}
 
+span {
+    color: #EE252F;
 }
 
 .hero-image{
-    position: relative;
-    height: 100%;
+    min-height: 100%;
+    min-width: 100%;
     overflow: hidden;
-    background-image: url ("/img/banner-bg-cropped.png");
-    background-size: cover;
+    background-image: url("/img/banner-bg-edited.png");
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    text-align: center;
 }
+
+.logo {
+    padding: 80px 0 10px 0;
+}
+
 
 .container {
     flex-direction: row-reverse;
     align-items: center;
     display: flex;
-    padding: 10% 13%;
+    padding: 15% 13% 10% 13%;
 }
 
 .container2 {
@@ -66,7 +88,6 @@ nav {
 
 .row-text {
     align-items: center;
-    padding-right: 4%;
 }
 
 .row-img {
@@ -98,3 +119,9 @@ button {
     padding: 30px 0 30px 0;
     background-color: black;
 }
+
+.yellowline {
+    background-color: #f8df1f;
+    padding: 5px;
+}
+

@@ -7,10 +7,10 @@
     <title></title>
     <meta name="description" content="">
 
-    <link
-    href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
 
     <link type="text/css" rel="stylesheet" href="css/styles.css"/>
+    <link type="text/css" rel="stylesheet/less" href="less/main.less"/>
   </head>
 
   <body>
@@ -21,12 +21,14 @@
               <li>Home</li>
               <li>Menu</li>
               <li>About Us</li>
-              <li>Order Now</li>
+              <li><span>Order Now</span></li>
             </ul>
         </nav>
 
         <div class="hero-image">
-          <h1>Bob's Burgers</h1>
+          <div class="logo">
+            <img src="img/logo.png" alt="burger" width="280" height="100"/>
+          </div>
           <button>Order Now</button>
         </div>
     </header>
@@ -36,7 +38,7 @@
         <img src="img/bobs-burger.png" alt="bob" width="232" height="187"/>
       </div>
       <div class="row-text">
-        <h2>World's Best Burgers</h2>
+        <h2>WORLD'S BEST <span>BURGERS</span></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
         <button>View Menu</button>
       </div>
@@ -47,7 +49,7 @@
         <img src="img/bob-headshot.png" alt="burger" width="176" height="309"/>
       </div>
       <div class="row-text">
-        <h2>Dine-in or Take-out</h2>
+        <h2>DINE-IN or <span>TAKE-OUT</span></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
         <button>Contact Us</button>
       </div>
@@ -55,12 +57,12 @@
  
 
    <footer>
-
+    <div class="yellowline"></div>
     <div class="footerlogo">
       <img src="img/logo.png" alt="burger" width="224" height="80"/>
     </div>
       
    </footer>
-   <script src="//cdn.jsdelivr.net/npm/less@3.13"></script>
+   <script src="//cdn.jsdelivr.net/npm/less@4.1.1" ></script>
   </body> 
 </html>
