@@ -12,18 +12,18 @@ body,html{
 
    p {
     padding: 10px 0 10px 0;
-    color: @paragraph-color;
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 400;
+    color: @black;
+    font-family: @font;
+    font-size: @size;
+    font-weight: @para-font-weight;
     text-transform: capitalize;
 }
 
 h2 {
-    color: #050500;
-    font-family: Roboto;
-    font-size: 30px;
-    font-weight: 500;
+    color: @black;
+    font-family: @font;
+    font-size: @heading-font-size;
+    font-weight: @font-weight;
 }
    
 ul{
@@ -38,18 +38,18 @@ ul{
 li {
     display: inline-block;
     padding: 10px;
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: 500;
-    color: #050500;
+    font-family: @font;
+    font-size: @link-font-size;
+    font-weight: @font-weight;
+    color: @black;
 }
 nav {
-    background-color: #f8df1f;
+    background-color: @yellow;
     padding: 2% 13% 2% 13%
 }
 
 span {
-    color: #EE252F;
+    color: @red;
 }
 
 .hero-image{
@@ -79,7 +79,7 @@ span {
     align-items: center;
     display: flex;
     padding: 10% 13%;
-    background-color: #F3F3F3;
+    background-color: @gray;
 }
 
 .row-text {
@@ -92,13 +92,14 @@ span {
 }
 
 button {
-    background-color: #f8df1f;
-    color: #050500;
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: 500;
+    background-color: @yellow;
+    color: @black;
+    font-family: @font;
+    font-size: @font-weight;
+    font-weight: @font-weight;
     text-transform: capitalize;
-    border-radius: 8px;
+    border-radius: @button-border;
+    border-color: transparent;
     padding: 10px 20px;
 }
 
@@ -113,11 +114,11 @@ button {
 .footerlogo {
     text-align: center;
     padding: 30px 0 30px 0;
-    background-color: black;
+    background-color: @black;
 }
 
 .yellowline {
-    background-color: #f8df1f;
+    background-color: @yellow;
     padding: 5px;
 }
 
