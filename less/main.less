@@ -15,7 +15,7 @@ body,html{
     color: @black;
     font-family: @font;
     font-size: @size;
-    font-weight: @para-font-weight;
+    font-weight: @font-weight;
     text-transform: capitalize;
 }
 
@@ -23,7 +23,7 @@ h2 {
     color: @black;
     font-family: @font;
     font-size: @heading-font-size;
-    font-weight: @font-weight;
+    font-weight: @font-weight + 100;
 }
    
 ul{
@@ -40,7 +40,7 @@ li {
     padding: 10px;
     font-family: @font;
     font-size: @link-font-size;
-    font-weight: @font-weight;
+    font-weight: @font-weight + 100;
     color: @black;
 }
 nav {
@@ -95,8 +95,8 @@ button {
     background-color: @yellow;
     color: @black;
     font-family: @font;
-    font-size: @font-weight;
-    font-weight: @font-weight;
+    font-size: @size + 2px;
+    font-weight: @font-weight + 100;
     text-transform: capitalize;
     border-radius: @button-border;
     border-color: transparent;
