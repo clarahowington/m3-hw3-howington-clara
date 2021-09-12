@@ -8,14 +8,10 @@ body,html{
     padding: 0;
     display: flex;
     flex-direction: column;
-   }
 
-   p {
+p {
     padding: 10px 0 10px 0;
-    color: @black;
-    font-family: @font;
-    font-size: @size;
-    font-weight: @font-weight;
+    .font-all();
     text-transform: capitalize;
 }
 
@@ -32,14 +28,13 @@ ul{
     margin:2px;
     padding:0;
     display: inline-block;
-
 }
    
 li {
     display: inline-block;
     padding: 10px;
     font-family: @font;
-    font-size: @link-font-size;
+    font-size: @size;
     font-weight: @font-weight + 100;
     color: @black;
 }
@@ -59,31 +54,30 @@ span {
     background-image: url("/img/banner-bg-edited.png");
     background-size: 100% 100%;
     background-repeat:no-repeat;
-    text-align: center;
+    .alignment();
 }
 
 .logo {
     padding: 80px 0 10px 0;
 }
 
-
 .container {
     flex-direction: row-reverse;
-    align-items: center;
     display: flex;
     padding: 15% 13% 10% 13%;
+#hamburger {
+    padding-left: 100px;
+}
 }
 
 .container2 {
     flex-direction: row;
-    align-items: center;
     display: flex;
     padding: 10% 13%;
     background-color: @gray;
+#bob {
+    padding-right: 100px;
 }
-
-.row-text {
-    align-items: center;
 }
 
 .row-img {
@@ -102,23 +96,28 @@ button {
     border-color: transparent;
     padding: 10px 20px;
 }
-
-#bob {
-    padding-right: 100px;
 }
 
-#hamburger {
-    padding-left: 100px;
-}
-
-.footerlogo {
-    text-align: center;
-    padding: 30px 0 30px 0;
+footer {
     background-color: @black;
+.footerlogo {
+        .alignment();
+        padding: 30px 0 30px 0;
+    }
+
+    .yellowline {
+        background-color: @yellow;
+        padding: 5px;
+    }
 }
 
-.yellowline {
-    background-color: @yellow;
-    padding: 5px;
+.alignment {
+    text-align: center;
 }
 
+.font-all {
+    font-size: @size;
+    font-weight: @font-weight;
+    color: @black;
+    font-family: @font;
+}
